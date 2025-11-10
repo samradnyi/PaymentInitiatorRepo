@@ -19,6 +19,6 @@ public class PaymentInitiatorServiceImpl {
         TransactionDetailsEntity transactionDetailsEntity = new TransactionDetailsEntity();
         transactionDetailsEntity.setTransactionDetails(transactionDetails);
         transactionDetailsRepo.save(transactionDetailsEntity);
-//        publisherService.publishMessage(transactionDetails);
+        publisherService.publishMessage(transactionDetails);
     }
 }
