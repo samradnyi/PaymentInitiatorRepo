@@ -1,4 +1,4 @@
-package org.paymentinitiator;
+package org.paymentinitiator.processor.entity;
 
 import lombok.Data;
 

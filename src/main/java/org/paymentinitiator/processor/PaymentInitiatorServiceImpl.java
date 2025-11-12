@@ -1,6 +1,6 @@
 package org.paymentinitiator.processor;
 
-import org.paymentinitiator.TransactionDetails;
+import org.paymentinitiator.processor.entity.TransactionDetails;
 import org.paymentinitiator.kafka.PublisherService;
 import org.paymentinitiator.mongo.TransactionDetailsEntity;
 import org.paymentinitiator.mongo.TransactionDetailsRepo;

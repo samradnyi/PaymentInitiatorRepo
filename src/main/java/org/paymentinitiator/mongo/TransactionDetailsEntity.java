@@ -1,11 +1,8 @@
 package org.paymentinitiator.mongo;
 
 import lombok.Data;
-import org.paymentinitiator.TransactionDetails;
-import org.springframework.data.annotation.Id;
+import org.paymentinitiator.processor.entity.TransactionDetails;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.math.BigDecimal;
 
 @Document("transaction_details")
 @Data

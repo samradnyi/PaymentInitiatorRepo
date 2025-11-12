@@ -1,6 +1,6 @@
 package org.paymentinitiator.kafka;
 
-import org.paymentinitiator.TransactionDetails;
+import org.paymentinitiator.processor.entity.TransactionDetails;
 
 public interface PublisherService {
 
