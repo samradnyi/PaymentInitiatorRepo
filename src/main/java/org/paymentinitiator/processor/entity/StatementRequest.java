@@ -6,6 +6,7 @@ import java.util.List;
 
 @Data
 public class StatementRequest {
-    String requestId;
-    List<String> accountList;
+    String debitAccount;
+    String accountBranch;
+    String countryCode;
 }

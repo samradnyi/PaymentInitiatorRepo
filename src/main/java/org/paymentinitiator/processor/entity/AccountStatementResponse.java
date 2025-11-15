@@ -5,8 +5,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 @Data
-public class TransactionDetails {
-    String requestId;
+public class AccountStatementResponse {
     BigDecimal earmarkAmount;
     String earmarkCurrency;
     String debitAccount;
@@ -14,8 +13,5 @@ public class TransactionDetails {
     String accountBranch;
     String earmarkReference;
     String sourceSystem;
-    String countryCode;
-    String requestType;
-    String paymentType;
-    String earmarkType;
+    String status;
 }

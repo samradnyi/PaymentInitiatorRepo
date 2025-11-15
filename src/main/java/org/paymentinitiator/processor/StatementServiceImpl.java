@@ -1,5 +1,6 @@
 package org.paymentinitiator.processor;
 
+import org.paymentinitiator.processor.entity.AccountStatementResponse;
 import org.paymentinitiator.processor.entity.StatementRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -13,9 +14,10 @@ public class StatementServiceImpl {
     RestTemplate restTemplate;
 
     public void getAccountStatement(StatementRequest statementRequest) {
+        String accStatementUrl = "http://host:port/transactionStatement";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<StatementRequest> httpRequest = new HttpEntity<>(statementRequest, headers);
-        restTemplate.exchange("url", HttpMethod.GET, httpRequest, State.class);
+        restTemplate.exchange(accStatementUrl, HttpMethod.GET, httpRequest, AccountStatementResponse.class);
     }
 }
